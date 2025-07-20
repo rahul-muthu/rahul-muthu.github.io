@@ -1854,6 +1854,97 @@ window.addEventListener('load', () => {
     setTimeout(updateActiveNav, 200);
 });
 
+// === Game Management System ===
+(function() {
+    let currentGame = null;
+    
+    function showGame(gameId) {
+        // Hide all games first
+        const allGames = document.querySelectorAll('.game-section');
+        allGames.forEach(game => game.style.display = 'none');
+        
+        // Show selected game
+        const selectedGame = document.getElementById(gameId);
+        if (selectedGame) {
+            selectedGame.style.display = 'block';
+            currentGame = gameId;
+            
+            // Add close button
+            addCloseButton(selectedGame);
+            
+            // Scroll to game
+            setTimeout(() => {
+                selectedGame.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'start' 
+                });
+            }, 100);
+        }
+    }
+    
+    function hideGame() {
+        if (currentGame) {
+            const gameSection = document.getElementById(currentGame);
+            if (gameSection) {
+                gameSection.style.display = 'none';
+                removeCloseButton(gameSection);
+            }
+            currentGame = null;
+            
+            // Scroll back to games section
+            const gamesSection = document.getElementById('blog');
+            if (gamesSection) {
+                gamesSection.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'start' 
+                });
+            }
+        }
+    }
+    
+    function addCloseButton(gameSection) {
+        // Remove existing close button if any
+        removeCloseButton(gameSection);
+        
+        const closeBtn = document.createElement('button');
+        closeBtn.className = 'game-close-btn';
+        closeBtn.innerHTML = '×';
+        closeBtn.title = 'Close Game';
+        closeBtn.onclick = hideGame;
+        
+        gameSection.appendChild(closeBtn);
+    }
+    
+    function removeCloseButton(gameSection) {
+        const existingBtn = gameSection.querySelector('.game-close-btn');
+        if (existingBtn) {
+            existingBtn.remove();
+        }
+    }
+    
+    // Add event listeners to game buttons
+    document.addEventListener('DOMContentLoaded', () => {
+        const gameButtons = document.querySelectorAll('.simple-game-btn');
+        gameButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                const gameId = button.getAttribute('data-game');
+                showGame(gameId);
+            });
+        });
+        
+        // Close game on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && currentGame) {
+                hideGame();
+            }
+        });
+    });
+    
+    // Make functions available globally if needed
+    window.showGame = showGame;
+    window.hideGame = hideGame;
+})();
+
 // Add loading animation
 window.addEventListener('load', () => {
     document.body.style.opacity = '0';
