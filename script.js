@@ -71,15 +71,32 @@ function updateActiveNav() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
     
+    // Get only the main portfolio sections, not the game sections
+    const portfolioSections = Array.from(sections).filter(section => {
+        const id = section.getAttribute('id');
+        return !['blackjack-game', 'coinflip-game', 'montyhall-game', 'coupon-game', 'segtree-game'].includes(id);
+    });
+    
     let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
+    const scrollPos = window.scrollY + 150; // Offset for header height
+    
+    // Find the section that's currently most visible
+    portfolioSections.forEach(section => {
+        const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        const sectionBottom = sectionTop + sectionHeight;
+        
+        if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
             current = section.getAttribute('id');
         }
     });
     
+    // If we're at the very top, default to 'about'
+    if (scrollPos < 200) {
+        current = 'about';
+    }
+    
+    // Update navigation links
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
