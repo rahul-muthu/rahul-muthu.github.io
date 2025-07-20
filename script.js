@@ -1808,7 +1808,7 @@ function initCursorBlink() {
 
 
 // Initialize all functions when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+function initializePortfolio() {
     // Initialize terminal animation after a short delay
     setTimeout(initTerminalAnimation, 500);
     
@@ -1822,6 +1822,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add scroll event listener for active navigation
     window.addEventListener('scroll', updateActiveNav);
     
+    // Initial call to set active nav on page load
+    setTimeout(updateActiveNav, 100);
+    
     // Add CSS for active nav state
     const style = document.createElement('style');
     style.textContent = `
@@ -1833,6 +1836,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(style);
+}
+
+// Multiple initialization attempts for GitHub Pages compatibility
+document.addEventListener('DOMContentLoaded', initializePortfolio);
+
+// Fallback for GitHub Pages
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializePortfolio);
+} else {
+    // DOM is already loaded
+    initializePortfolio();
+}
+
+// Additional fallback
+window.addEventListener('load', () => {
+    setTimeout(updateActiveNav, 200);
 });
 
 // Add loading animation
