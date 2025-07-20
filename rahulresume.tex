@@ -1,0 +1,142 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  pdftitle={Rahul Muthu – Resume},
+  pdfpagemode=FullScreen,
+}
+
+\urlstyle{same}
+\pagestyle{empty}
+
+\titleformat{\section}
+  {\vspace{-7pt}\scshape\raggedright\large}
+  {}{0em}{}
+  [\color{black}\titlerule\vspace{-6pt}]
+
+% limit small-caps scope to the name only
+\newcommand{\myName}[1]{{\Huge\scshape\centerline{#1}}\vspace{4pt}\normalfont}
+\newcommand{\myContact}[3]{\large\centerline{#1 \,$|$\, #2 \,$|$\, #3}}
+\newcommand{\experienceEntry}[4]{%
+  \textbf{#1}\hfill#2\\
+  \textit{#3}\hfill#4\\
+}
+
+\begin{document}
+
+\myName{RAHUL MUTHU}
+\myContact
+  {+1-934-263-2862}
+  {\href{mailto:rahul.muthu@stonybrook.edu}{rahul.muthu@stonybrook.edu}}
+  {\href{https://www.linkedin.com/in/rahul-muthu-}{LinkedIn}\,$|$\,\href{https://github.com/rahul-muthu}{GitHub}}
+
+%----------------------------------------------------------------------
+\section{Education}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Stony Brook University} & Stony Brook, NY \\
+\textit{B.S.\ in Computer Science \& Applied Mathematics} & Expected May 2027\\
+\end{tabular*}
+\vspace{-2pt}\small
+\textbf{Relevant Coursework:}
+\textbf{Data Structures},
+\textbf{Analysis of Algorithms},
+\textbf{Software Engineering},
+\textbf{Systems I},
+\textbf{Systems II},
+\textbf{Computational Geometry},
+\textbf{Deterministic \& Stochastic Models},
+\textbf{Probability \& Statistics},
+\textbf{Multivariable Calculus},
+\textbf{Differential Equations} \\
+\textbf{Dean’s List} — Spring 2025
+\normalsize
+
+%----------------------------------------------------------------------
+\section{Experience}
+\begin{itemize}[leftmargin=*,itemsep=-2pt,topsep=1pt]
+
+\item
+\experienceEntry
+  {Research Assistant}
+  {Oct 2024 – Present}
+  {Stony Brook University}
+  {Stony Brook, NY}
+\begin{itemize}[leftmargin=*,itemsep=-2pt,topsep=-10pt]
+  \item \textbf{Built} an \textbf{AutoAnnotator} in \textbf{PyTorch}; ran \textbf{grid-search} + \textbf{$k$-fold CV} on \textbf{27 k} single-cell profiles spanning \textbf{30} categories
+  \item \textbf{Engineered} a \textbf{55 GB/day} \textbf{SLURM} pipeline across \textbf{8 × A100 GPUs}, cutting epoch time from \textbf{130 min} → \textbf{45 min}
+  \item \textbf{Designed} \textbf{hierarchical classifiers} and \textbf{class-balanced loss} stabilising rare-class F1 (\textbf{+15 pp}) across validation splits
+  \item \textbf{Reduced} feature space \textbf{23 k} → \textbf{3.5 k} via variance filters + \textbf{PCA}, trimming wall-clock per iteration \textbf{60 \%}
+\end{itemize}
+
+\item
+\experienceEntry
+  {Software Engineering Intern}
+  {Jul 2024 – Aug 2024}
+  {Giesecke+Devrient}
+  {Dubai, UAE}
+\begin{itemize}[leftmargin=*,itemsep=-2pt,topsep=-10pt]
+  \item \textbf{Built} an \textbf{XGBoost} demand-forecast model; lowered idle cash inventory by \textbf{40 \%}
+  \item \textbf{Deployed} \textbf{AWS Lambda} + \textbf{Kinesis} ETL; dashboard latency \textbf{180 ms} → \textbf{90 ms}
+  \item Authored a \textbf{Jest} test-suite for \textbf{TypeScript} analytics micro-services; achieved \textbf{90 \%+} line coverage
+  \item \textbf{Automated} CI/CD with \textbf{Docker} \& \textbf{Kubernetes}, shrinking release cycles \textbf{60 \%}
+\end{itemize}
+
+\item
+\experienceEntry
+  {Software Engineering Intern}
+  {Oct 2023 – Jan 2024}
+  {Chi Squared Consulting}
+  {New York, NY}
+\begin{itemize}[leftmargin=*,itemsep=-2pt,topsep=-10pt]
+  \item \textbf{Developed} Python anomaly-detection for casino transaction logs; flagged \textbf{35 \%} more fraud cases
+  \item \textbf{Built} ingestion \& cleaning pipelines, increasing data reliability \textbf{25 \%} for downstream modelling
+  \item \textbf{Identified} \textbf{15+} statistical irregularities, improving fraud detection accuracy \textbf{35 \%}
+\end{itemize}
+
+\end{itemize}
+
+%----------------------------------------------------------------------
+\section{Projects}
+\begin{itemize}[leftmargin=*,itemsep=-2pt,topsep=1pt]
+
+\item
+\textbf{Hold’Em Engine (C++20)} — Poker UI modelling game strategies; \textbf{Monte Carlo} simulations for pot equity; \textbf{bitwise} hand evaluator
+
+\item
+\textbf{Plinko Simulator (p5.js)} — Interactive board converging to the \textbf{binomial distribution}; live \textbf{expected value}, \textbf{variance}, confidence bands; histogram updates incrementally; encapsulated physics in \textbf{ES6} classes; verified RNG fairness with \textbf{chi-square tests}
+\end{itemize}
+
+%----------------------------------------------------------------------
+\section{Activities}
+\begin{itemize}[leftmargin=*,itemsep=-2pt,topsep=1pt]
+  \item \textbf{Founder \& President – Stony Brook Quant Club}: 80+ members, corporate sponsorships; poker tournaments, puzzle nights, \textbf{Jane Street Estimathon}, \textbf{Flow Traders} info session
+  \item \textbf{ICPC Qualifier}: 2\textsuperscript{nd} overall in junior category; 200+ problems solved (\textbf{Codeforces}, \textbf{LeetCode}, \textbf{AtCoder}, \textbf{CSES})
+  \item \textbf{UAE IMO National Qualifier}: Rank 6 nationally; invited to \textbf{IMO} training camp
+\end{itemize}
+
+%----------------------------------------------------------------------
+\section{Publications \& Presentations}
+\begin{itemize}[leftmargin=*,itemsep=-2pt,topsep=1pt]
+  \item B. Lukacsy, \textbf{R. Muthu}, A. Jalwan.\,
+        \textit{Supervised Deep Learning for Automatic Cell-Type Annotation with scRNA-seq}.\
+        Presented at the \textbf{URECA Undergraduate Research Symposium}, Stony Brook University, 2025
+\end{itemize}
+
+%----------------------------------------------------------------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt,topsep=1pt]
+  \item \textbf{Programming}: Python (\textbf{NumPy}, \textbf{pandas}, \textbf{scikit-learn}, \textbf{PyTorch}), \textbf{C++17/20}, \textbf{Java}, \textbf{SQL}, \textbf{Bash}
+  \item \textbf{Systems}: \textbf{Linux}, \textbf{AWS}, \textbf{Docker}, \textbf{Kubernetes}, \textbf{SLURM}, \textbf{Git}, \textbf{CI/CD}
+\end{itemize}
+
+\end{document}
+

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Muthu | Computer Science & Applied Mathematics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-links">
+                    <a href="#about">about</a>
+                    <a href="#education">education</a>
+                    <a href="#experience">experience</a>
+                    <a href="#projects">projects</a>
+                    <a href="#minigames">minigames</a>
+                    <a href="#publications">publications</a>
+                    <a href="#activities">activities</a>
+                    <a href="#blog">blog</a>
+                    <a href="#contact">contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about" class="hero">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="terminal-button red"></span>
+                        <span class="terminal-button yellow"></span>
+                        <span class="terminal-button green"></span>
+                        <span class="terminal-title">rahul@portfolio:~$</span>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="command-line">
+                            <span class="prompt">$</span>
+                            <span class="command">whoami</span>
+                        </div>
+                        <div class="output">Rahul Muthu - Computer Science & Applied Mathematics Student</div>
+                        
+                        <div class="command-line">
+                            <span class="prompt">$</span>
+                            <span class="command">cat skills.txt</span>
+                        </div>
+                        <div class="output">
+                            <span class="skill">Python</span>
+                            <span class="skill">C++17/20</span>
+                            <span class="skill">Java</span>
+                            <span class="skill">PyTorch</span>
+                            <span class="skill">NumPy</span>
+                            <span class="skill">pandas</span>
+                            <span class="skill">scikit-learn</span>
+                            <span class="skill">AWS</span>
+                            <span class="skill">Docker</span>
+                            <span class="skill">Kubernetes</span>
+                            <span class="skill">SLURM</span>
+                        </div>
+                        
+                        <div class="command-line">
+                            <span class="prompt">$</span>
+                            <span class="command">ls achievements/</span>
+                        </div>
+                        <div class="output">
+                            <span class="achievement">🏆 SBU ICPC Qualifier 2nd Place</span>
+                            <span class="achievement">🥇 UAE IMO National Qualifier</span>
+                            <span class="achievement">📊 Research Assistant</span>
+                            <span class="achievement">💻 200+ Problems Solved</span>
+                        </div>
+                        
+                        <div class="command-line">
+                            <span class="prompt">$</span>
+                            <span class="command">_</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="section">
+                <h2>education</h2>
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>Stony Brook University</h3>
+                        <span class="degree">B.S. in Computer Science & Applied Mathematics</span>
+                        <span class="graduation">Expected May 2027</span>
+                    </div>
+                    <div class="education-details">
+                        <div class="coursework">
+                            <h4>Relevant Coursework:</h4>
+                            <div class="courses">
+                                <span class="course">Data Structures</span>
+                                <span class="course">Analysis of Algorithms</span>
+                                <span class="course">Software Engineering</span>
+                                <span class="course">Systems I & II</span>
+                                <span class="course">Computational Geometry</span>
+                                <span class="course">Deterministic & Stochastic Models</span>
+                                <span class="course">Probability & Statistics</span>
+                                <span class="course">Multivariable Calculus</span>
+                                <span class="course">Differential Equations</span>
+                            </div>
+                        </div>
+                        <div class="achievements">
+                            <span class="achievement-badge">Dean's List — Spring 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="section">
+                <h2>experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Oct 2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Research Assistant</h3>
+                            <div class="company">Stony Brook University</div>
+                            <ul>
+                                <li>Made an AutoAnnotator with Supervised Deep Learning for Automatic Cell-Type Annotation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 2024 - Aug 2024</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineering Intern</h3>
+                            <div class="company">Giesecke+Devrient</div>
+                            <ul>
+                                <li>Worked on Currency Management software</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Oct 2023 - Jan 2024</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineering Intern</h3>
+                            <div class="company">Chi Squared Consulting</div>
+                            <ul>
+                                <li>Found dataset anomalies for casino transactions using time-series</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Hold'Em Engine</h3>
+                            <div class="project-links">
+                                <a href="#" class="link">github</a>
+                                <a href="#" class="link">demo</a>
+                            </div>
+                        </div>
+                        <p>Poker UI modelling game strategies with Monte Carlo simulations for pot equity. Features bitwise hand evaluator for optimal performance.</p>
+                        <div class="tech-stack">
+                            <span class="tech">C++20</span>
+                            <span class="tech">Monte Carlo</span>
+                            <span class="tech">Bitwise</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Plinko Simulator</h3>
+                            <div class="project-links">
+                                <a href="#" class="link">github</a>
+                                <a href="#" class="link">demo</a>
+                            </div>
+                        </div>
+                        <p>Interactive board converging to the binomial distribution with live expected value, variance, and confidence bands. Features encapsulated physics in ES6 classes.</p>
+                        <div class="tech-stack">
+                            <span class="tech">p5.js</span>
+                            <span class="tech">ES6</span>
+                            <span class="tech">Statistics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>AutoAnnotator</h3>
+                            <div class="project-links">
+                                <a href="#" class="link">github</a>
+                                <a href="#" class="link">paper</a>
+                            </div>
+                        </div>
+                        <p>Deep learning system for automatic cell-type annotation with scRNA-seq data. Processes 27k single-cell profiles across 30 categories with hierarchical classifiers.</p>
+                        <div class="tech-stack">
+                            <span class="tech">PyTorch</span>
+                            <span class="tech">SLURM</span>
+                            <span class="tech">A100 GPUs</span>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </section>
+
+            <section id="minigames" class="section">
+                <h2>minigames</h2>
+                <!-- Blackjack Game UI -->
+            <section id="blackjack-game" class="section" style="display:none;">
+                <h2>Blackjack</h2>
+                <div class="bj-container">
+                    <div class="bj-row">
+                        <div class="bj-hand-label">Dealer</div>
+                        <div id="bj-dealer-hand" class="bj-hand"></div>
+                    </div>
+                    <div class="bj-row">
+                        <div class="bj-hand-label">Player</div>
+                        <div id="bj-player-hand" class="bj-hand"></div>
+                    </div>
+                    <div class="bj-row">
+                        <div id="bj-message" class="bj-message"></div>
+                    </div>
+                    <div class="bj-row bj-controls">
+                        <button id="bj-hit" disabled>Hit</button>
+                        <button id="bj-stand" disabled>Stand</button>
+                        <button id="bj-newgame">New Game</button>
+                    </div>
+                    <div class="bj-row">
+                        <div id="bj-count" class="bj-count">Running count: 0</div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Coin Flip Game UI -->
+            <section id="coinflip-game" class="section">
+                <h2>Coin Flip Betting Simulator</h2>
+                <div class="cf-container">
+                    <div class="cf-row">
+                        <div class="cf-bankroll">
+                            <span class="cf-label">Bankroll:</span>
+                            <span id="cf-bankroll" class="cf-value">$1000</span>
+                        </div>
+                        <div class="cf-bias">
+                            <span class="cf-label">Coin Bias:</span>
+                            <span id="cf-bias" class="cf-value">50% Heads</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cf-row">
+                        <div class="cf-coin-container">
+                            <div id="cf-coin" class="cf-coin">
+                                <div class="cf-coin-side cf-heads">H</div>
+                                <div class="cf-coin-side cf-tails">T</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cf-row">
+                        <div id="cf-message" class="cf-message">Choose your prediction and bet amount</div>
+                    </div>
+                    
+                    <div class="cf-row cf-betting">
+                        <div class="cf-bet-section">
+                            <label for="cf-bet-amount" class="cf-label">Bet Amount:</label>
+                            <input type="number" id="cf-bet-amount" class="cf-input" min="1" value="10">
+                        </div>
+                        <div class="cf-strategy-section">
+                            <label for="cf-strategy" class="cf-label">Strategy:</label>
+                            <select id="cf-strategy" class="cf-select">
+                                <option value="manual">Manual</option>
+                                <option value="martingale">Martingale</option>
+                                <option value="fixed-fraction">Fixed Fraction (5%)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="cf-row cf-predictions">
+                        <button id="cf-heads" class="cf-prediction-btn">Bet Heads</button>
+                        <button id="cf-tails" class="cf-prediction-btn">Bet Tails</button>
+                    </div>
+                    
+                    <div class="cf-row cf-controls">
+                        <button id="cf-reset" class="cf-control-btn">Reset Game</button>
+                        <button id="cf-bias-btn" class="cf-control-btn">Change Bias</button>
+                    </div>
+                    
+                    <div class="cf-row cf-stats">
+                        <div class="cf-stat">
+                            <span class="cf-stat-label">Wins:</span>
+                            <span id="cf-wins" class="cf-stat-value">0</span>
+                        </div>
+                        <div class="cf-stat">
+                            <span class="cf-stat-label">Losses:</span>
+                            <span id="cf-losses" class="cf-stat-value">0</span>
+                        </div>
+                        <div class="cf-stat">
+                            <span class="cf-stat-label">Win Rate:</span>
+                            <span id="cf-winrate" class="cf-stat-value">0%</span>
+                        </div>
+                        <div class="cf-stat">
+                            <span class="cf-stat-label">Total Bet:</span>
+                            <span id="cf-total-bet" class="cf-stat-value">$0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Monty Hall Game UI -->
+            <section id="montyhall-game" class="section">
+                <h2>Monty Hall Simulator</h2>
+                <div class="mh-container">
+                    <div class="mh-row">
+                        <div id="mh-message" class="mh-message">Choose your initial door</div>
+                    </div>
+                    
+                    <div class="mh-row mh-doors-container">
+                        <div class="mh-door" data-door="0">
+                            <div class="mh-door-front">
+                                <div class="mh-door-number">1</div>
+                                <div class="mh-door-handle"></div>
+                            </div>
+                            <div class="mh-door-content">
+                                <div class="mh-prize">🎁</div>
+                                <div class="mh-goat">🐐</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mh-door" data-door="1">
+                            <div class="mh-door-front">
+                                <div class="mh-door-number">2</div>
+                                <div class="mh-door-handle"></div>
+                            </div>
+                            <div class="mh-door-content">
+                                <div class="mh-prize">🎁</div>
+                                <div class="mh-goat">🐐</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mh-door" data-door="2">
+                            <div class="mh-door-front">
+                                <div class="mh-door-number">3</div>
+                                <div class="mh-door-handle"></div>
+                            </div>
+                            <div class="mh-door-content">
+                                <div class="mh-prize">🎁</div>
+                                <div class="mh-goat">🐐</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mh-row mh-decision" style="display:none;">
+                        <div class="mh-decision-text">
+                            Host opened Door <span id="mh-opened-door">X</span> with a goat!<br>
+                            Do you want to <strong>stay</strong> with Door <span id="mh-chosen-door">X</span> or <strong>switch</strong> to Door <span id="mh-remaining-door">X</span>?
+                        </div>
+                    </div>
+                    
+                    <div class="mh-row mh-actions">
+                        <button id="mh-stay" class="mh-action-btn" style="display:none;">Stay with Original</button>
+                        <button id="mh-switch" class="mh-action-btn" style="display:none;">Switch Doors</button>
+                        <button id="mh-newgame" class="mh-control-btn">New Game</button>
+                    </div>
+                    
+                    <div class="mh-row mh-stats">
+                        <div class="mh-stats-section">
+                            <h4 class="mh-stats-title">Stay Strategy</h4>
+                            <div class="mh-stat">
+                                <span class="mh-stat-label">Wins:</span>
+                                <span id="mh-stay-wins" class="mh-stat-value">0</span>
+                            </div>
+                            <div class="mh-stat">
+                                <span class="mh-stat-label">Total:</span>
+                                <span id="mh-stay-total" class="mh-stat-value">0</span>
+                            </div>
+                            <div class="mh-stat">
+                                <span class="mh-stat-label">Win Rate:</span>
+                                <span id="mh-stay-rate" class="mh-stat-value">0%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mh-stats-section">
+                            <h4 class="mh-stats-title">Switch Strategy</h4>
+                            <div class="mh-stat">
+                                <span class="mh-stat-label">Wins:</span>
+                                <span id="mh-switch-wins" class="mh-stat-value">0</span>
+                            </div>
+                            <div class="mh-stat">
+                                <span class="mh-stat-label">Total:</span>
+                                <span id="mh-switch-total" class="mh-stat-value">0</span>
+                            </div>
+                            <div class="mh-stat">
+                                <span class="mh-stat-label">Win Rate:</span>
+                                <span id="mh-switch-rate" class="mh-stat-value">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Coupon Collector Game UI -->
+            <section id="coupon-game" class="section">
+                <h2>Coupon Collector Simulator</h2>
+                <div class="cc-container">
+                    <div class="cc-row">
+                        <div class="cc-settings">
+                            <div class="cc-setting">
+                                <label for="cc-n-coupons" class="cc-label">Coupon Types (N):</label>
+                                <input type="number" id="cc-n-coupons" class="cc-input" min="2" max="20" value="5">
+                            </div>
+                            <div class="cc-setting">
+                                <label for="cc-distribution" class="cc-label">Distribution:</label>
+                                <select id="cc-distribution" class="cc-select">
+                                    <option value="uniform">Uniform</option>
+                                    <option value="geometric">Geometric (rare types)</option>
+                                    <option value="biased">Biased (common type)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cc-row">
+                        <div id="cc-message" class="cc-message">Configure settings and start collecting!</div>
+                    </div>
+                    
+                    <div class="cc-row cc-collection-display">
+                        <div class="cc-collection-header">
+                            <h4>Collection Progress</h4>
+                            <div class="cc-progress-info">
+                                <span>Collected: <span id="cc-collected-count">0</span>/<span id="cc-total-types">5</span></span>
+                                <span>Draws: <span id="cc-draw-count">0</span></span>
+                            </div>
+                        </div>
+                        <div id="cc-coupons-grid" class="cc-coupons-grid">
+                            <!-- Coupon slots will be generated here -->
+                        </div>
+                    </div>
+                    
+                    <div class="cc-row cc-draw-area">
+                        <div class="cc-draw-display">
+                            <div class="cc-draw-label">Recent Draws:</div>
+                            <div id="cc-recent-draws" class="cc-recent-draws">
+                                <!-- Recent draws will appear here -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cc-row cc-controls">
+                        <button id="cc-draw" class="cc-action-btn">Draw Coupon</button>
+                        <button id="cc-auto-collect" class="cc-action-btn">Auto Collect</button>
+                        <button id="cc-reset" class="cc-control-btn">Reset Collection</button>
+                    </div>
+                    
+                    <div class="cc-row cc-theory">
+                        <div class="cc-theory-section">
+                            <h4 class="cc-theory-title">Theoretical Analysis</h4>
+                            <div class="cc-theory-stats">
+                                <div class="cc-theory-stat">
+                                    <span class="cc-theory-label">Expected Draws (E[X]):</span>
+                                    <span id="cc-expected" class="cc-theory-value">~0</span>
+                                </div>
+                                <div class="cc-theory-stat">
+                                    <span class="cc-theory-label">Harmonic Number (Hₙ):</span>
+                                    <span id="cc-harmonic" class="cc-theory-value">0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cc-row cc-stats">
+                        <div class="cc-stats-section">
+                            <h4 class="cc-stats-title">Empirical Results</h4>
+                            <div class="cc-stat">
+                                <span class="cc-stat-label">Collections:</span>
+                                <span id="cc-total-collections" class="cc-stat-value">0</span>
+                            </div>
+                            <div class="cc-stat">
+                                <span class="cc-stat-label">Avg Draws:</span>
+                                <span id="cc-avg-draws" class="cc-stat-value">0</span>
+                            </div>
+                            <div class="cc-stat">
+                                <span class="cc-stat-label">Min Draws:</span>
+                                <span id="cc-min-draws" class="cc-stat-value">∞</span>
+                            </div>
+                            <div class="cc-stat">
+                                <span class="cc-stat-label">Max Draws:</span>
+                                <span id="cc-max-draws" class="cc-stat-value">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Segment Tree Explorer UI -->
+            <section id="segtree-game" class="section">
+                <h2>Segment Tree Explorer</h2>
+                <div class="st-container">
+                    <div class="st-row">
+                        <div class="st-settings">
+                            <div class="st-setting">
+                                <label for="st-array-input" class="st-label">Array:</label>
+                                <input type="text" id="st-array-input" class="st-input" value="1,3,5,7,9,11" placeholder="1,2,3,4,5">
+                            </div>
+                            <div class="st-setting">
+                                <label for="st-operation" class="st-label">Operation:</label>
+                                <select id="st-operation" class="st-select">
+                                    <option value="sum">Range Sum</option>
+                                    <option value="min">Range Min</option>
+                                    <option value="max">Range Max</option>
+                                </select>
+                            </div>
+                            <button id="st-build" class="st-control-btn">Build Tree</button>
+                        </div>
+                    </div>
+                    
+                    <div class="st-row">
+                        <div id="st-message" class="st-message">Configure array and build the segment tree</div>
+                    </div>
+                    
+                    <div class="st-row st-tree-display">
+                        <div class="st-tree-container">
+                            <div id="st-tree" class="st-tree">
+                                <!-- Tree visualization will be generated here -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="st-row st-array-display">
+                        <div class="st-array-header">
+                            <h4>Original Array</h4>
+                            <div class="st-array-info">
+                                <span>Size: <span id="st-array-size">0</span></span>
+                                <span>Operation: <span id="st-current-op">None</span></span>
+                            </div>
+                        </div>
+                        <div id="st-array" class="st-array">
+                            <!-- Array elements will be generated here -->
+                        </div>
+                    </div>
+                    
+                    <div class="st-row st-operations">
+                        <div class="st-operation-section">
+                            <h4 class="st-operation-title">Range Query</h4>
+                            <div class="st-operation-inputs">
+                                <label class="st-operation-label">
+                                    Left: <input type="number" id="st-query-left" class="st-operation-input" min="0" value="0">
+                                </label>
+                                <label class="st-operation-label">
+                                    Right: <input type="number" id="st-query-right" class="st-operation-input" min="0" value="2">
+                                </label>
+                                <button id="st-query" class="st-action-btn">Query Range</button>
+                            </div>
+                            <div id="st-query-result" class="st-result">Result: -</div>
+                        </div>
+                        
+                        <div class="st-operation-section">
+                            <h4 class="st-operation-title">Range Update</h4>
+                            <div class="st-operation-inputs">
+                                <label class="st-operation-label">
+                                    Left: <input type="number" id="st-update-left" class="st-operation-input" min="0" value="1">
+                                </label>
+                                <label class="st-operation-label">
+                                    Right: <input type="number" id="st-update-right" class="st-operation-input" min="0" value="3">
+                                </label>
+                                <label class="st-operation-label">
+                                    Value: <input type="number" id="st-update-value" class="st-operation-input" value="5">
+                                </label>
+                                <button id="st-update" class="st-action-btn">Update Range</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="st-row st-controls">
+                        <button id="st-reset" class="st-control-btn">Reset Tree</button>
+                        <button id="st-step" class="st-control-btn">Step Mode</button>
+                        <button id="st-random" class="st-control-btn">Random Array</button>
+                    </div>
+                    
+                    <div class="st-row st-info">
+                        <div class="st-info-section">
+                            <h4 class="st-info-title">Tree Stats</h4>
+                            <div class="st-stat">
+                                <span class="st-stat-label">Nodes:</span>
+                                <span id="st-node-count" class="st-stat-value">0</span>
+                            </div>
+                            <div class="st-stat">
+                                <span class="st-stat-label">Height:</span>
+                                <span id="st-tree-height" class="st-stat-value">0</span>
+                            </div>
+                            <div class="st-stat">
+                                <span class="st-stat-label">Lazy Updates:</span>
+                                <span id="st-lazy-count" class="st-stat-value">0</span>
+                            </div>
+                            <div class="st-stat">
+                                <span class="st-stat-label">Last Operation:</span>
+                                <span id="st-last-operation" class="st-stat-value">None</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </section>
+    
+
+            <section id="publications" class="section">
+                <h2>publications</h2>
+                <div class="publications-list">
+                    <div class="publication">
+                        <div class="publication-header">
+                            <h3>"Supervised Deep Learning for Automatic Cell-Type Annotation with scRNA-seq"</h3>
+                            <span class="venue">URECA Symposium 2025</span>
+                        </div>
+                        <p>Research on automatic cell-type annotation using deep learning with single-cell RNA sequencing data. Presented at Stony Brook University Undergraduate Research Symposium.</p>
+                        <div class="publication-links">
+                            <a href="#" class="link">paper</a>
+                            <a href="#" class="link">presentation</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog" class="section">
+                <h2>blog & puzzles</h2>
+                <div class="blog-grid">
+                    <!-- Blog posts will be added here in the future -->
+                </div>
+            </section>
+
+
+
+            <section id="activities" class="section">
+                <h2>activities</h2>
+                <div class="activities-grid">
+                    <div class="activity-card">
+                        <div class="activity-header">
+                            <h3>Founder & President</h3>
+                            <span class="organization">Stony Brook Quant Club</span>
+                        </div>
+                        <p>Leading 80+ members with corporate sponsorships, poker tournaments, puzzle nights, Jane Street Estimathon, and Flow Traders info sessions.</p>
+                        <div class="activity-highlights">
+                            <span class="highlight">80+ Members</span>
+                            <span class="highlight">Corporate Sponsorships</span>
+                            <span class="highlight">Jane Street Estimathon</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card">
+                        <div class="activity-header">
+                            <h3>SBU ICPC Qualifier</h3>
+                            <span class="organization">Competitive Programming</span>
+                        </div>
+                        <p>2nd overall in junior category with 200+ problems solved across Codeforces, LeetCode, AtCoder, and CSES platforms.</p>
+                        <div class="activity-highlights">
+                            <span class="highlight">2nd Place</span>
+                            <span class="highlight">200+ Problems</span>
+                            <span class="highlight">Multiple Platforms</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card">
+                        <div class="activity-header">
+                            <h3>UAE IMO National Qualifier</h3>
+                            <span class="organization">Mathematics Olympiad</span>
+                        </div>
+                        <p>Rank 6 nationally with invitation to IMO training camp, demonstrating advanced mathematical problem-solving skills.</p>
+                        <div class="activity-highlights">
+                            <span class="highlight">Rank 6</span>
+                            <span class="highlight">IMO Training Camp</span>
+                            <span class="highlight">National Level</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>contact</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="label">email:</span>
+                        <a href="mailto:rahul.muthu@stonybrook.edu" class="link">rahul.muthu@stonybrook.edu</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">phone:</span>
+                        <a href="tel:+1-934-263-2862" class="link">+1-934-263-2862</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">linkedin:</span>
+                        <a href="https://www.linkedin.com/in/rahul-muthu-073366218/" class="link">linkedin.com/in/rahul-muthu-073366218</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">github:</span>
+                        <a href="https://github.com/rahul-muthu" class="link">github.com/rahul-muthu</a>
+                    </div>
+                </div>
+            </section>
+
+           
+            
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <span>© 2025 Rahul Muthu. Built with sweat and tears.</span>
+                <div class="footer-links">
+                    <a href="simple.html" class="link">simple version</a>
+                    <a href="#" class="link">resume</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
