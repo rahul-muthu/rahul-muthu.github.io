@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Muthu | Computer Science & Applied Mathematics</title>
+    <title>Rahul Muthu | Computer Science &amp; Applied Mathematics</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +40,7 @@
                             <span class="prompt">$</span>
                             <span class="command">whoami</span>
                         </div>
-                        <div class="output">Rahul Muthu - Computer Science & Applied Mathematics Student</div>
+                        <div class="output">Rahul Muthu - Computer Science &amp; Applied Mathematics Student</div>
                         
                         <div class="command-line">
                             <span class="prompt">$</span>
@@ -58,6 +58,8 @@
                             <span class="skill">Docker</span>
                             <span class="skill">Kubernetes</span>
                             <span class="skill">SLURM</span>
+                            <span class="skill">SQL</span>
+                            <span class="skill">Bash</span>
                         </div>
                         
                         <div class="command-line">
@@ -67,7 +69,7 @@
                         <div class="output">
                             <span class="achievement">🏆 SBU ICPC Qualifier 2nd Place</span>
                             <span class="achievement">🥇 UAE IMO National Qualifier</span>
-                            <span class="achievement">📊 Research Assistant</span>
+                            <span class="achievement">📚 Teaching Assistant</span>
                             <span class="achievement">💻 200+ Problems Solved</span>
                         </div>
                         
@@ -84,7 +86,7 @@
                 <div class="education-card">
                     <div class="education-header">
                         <h3>Stony Brook University</h3>
-                        <span class="degree">B.S. in Computer Science & Applied Mathematics</span>
+                        <span class="degree">B.S. in Computer Science &amp; Applied Mathematics</span>
                         <span class="graduation">Expected May 2027</span>
                     </div>
                     <div class="education-details">
@@ -94,12 +96,10 @@
                                 <span class="course">Data Structures</span>
                                 <span class="course">Analysis of Algorithms</span>
                                 <span class="course">Software Engineering</span>
-                                <span class="course">Systems I & II</span>
+                                <span class="course">Systems I &amp; II</span>
                                 <span class="course">Computational Geometry</span>
-                                <span class="course">Deterministic & Stochastic Models</span>
-                                <span class="course">Probability & Statistics</span>
-                                <span class="course">Multivariable Calculus</span>
-                                <span class="course">Differential Equations</span>
+                                <span class="course">Deterministic &amp; Stochastic Models</span>
+                                <span class="course">Probability &amp; Statistics</span>
                             </div>
                         </div>
                         <div class="achievements">
@@ -113,12 +113,39 @@
                 <h2>experience</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-date">Oct 2024 - Present</div>
+                        <div class="timeline-date">Jan 2026 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Teaching Assistant</h3>
+                            <div class="company">Stony Brook University — CSE 320: Systems II</div>
+                            <ul>
+                                <li>Author homework assignments, autograder tests, and exam questions for systems programming topics.</li>
+                                <li>Hold weekly office hours and review sessions covering debugging, memory, concurrency, and assignment design.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Feb 2026 - Jul 2026</div>
+                        <div class="timeline-content">
+                            <h3>MicroBook</h3>
+                            <div class="company">Independent Systems Project — C++20</div>
+                            <ul>
+                                <li>Built a deterministic single-symbol limit order book with validated domain types, order lookup, snapshots, and invariant checks.</li>
+                                <li>Implemented price-time matching with partial and full fills, maker-price trades, and deterministic trade ordering.</li>
+                                <li>Added replay and verification CLIs, final-state hashing, fixed-seed invariant tests, and Google Benchmark workloads.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Oct 2024 - Aug 2025</div>
                         <div class="timeline-content">
                             <h3>Research Assistant</h3>
                             <div class="company">Stony Brook University</div>
                             <ul>
-                                <li>Made an AutoAnnotator with Supervised Deep Learning for Automatic Cell-Type Annotation</li>
+                                <li>Developed a modular PyTorch AutoAnnotator with grid search and k-fold cross-validation on 27k cell profiles.</li>
+                                <li>Built a SLURM training pipeline processing 55 GB/day across 8 A100 GPUs, reducing epoch time from 130 to 45 minutes.</li>
+                                <li>Improved rare-cell F1 by 15 percentage points while reducing the feature set from 23k to 3.5k.</li>
                             </ul>
                         </div>
                     </div>
@@ -129,18 +156,9 @@
                             <h3>Software Engineering Intern</h3>
                             <div class="company">Giesecke+Devrient</div>
                             <ul>
-                                <li>Worked on Currency Management software</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-date">Oct 2023 - Jan 2024</div>
-                        <div class="timeline-content">
-                            <h3>Software Engineering Intern</h3>
-                            <div class="company">Chi Squared Consulting</div>
-                            <ul>
-                                <li>Found dataset anomalies for casino transactions using time-series</li>
+                                <li>Developed an XGBoost demand-forecasting service that reduced physical cash inventory requirements by 40%.</li>
+                                <li>Deployed a serverless AWS Lambda and Kinesis ETL pipeline, cutting dashboard p95 latency from 180ms to 90ms.</li>
+                                <li>Added Jest tests with 90%+ coverage and automated releases with Docker, Kubernetes, and GitLab CI.</li>
                             </ul>
                         </div>
                     </div>
@@ -150,6 +168,21 @@
             <section id="projects" class="section">
                 <h2>pet projects</h2>
                 <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>MicroBook</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/rahul-muthu/microbook" class="link">github</a>
+                            </div>
+                        </div>
+                        <p>Deterministic C++20 limit order book with price-time matching, event replay, final-state verification, invariant tests, CLI tools, and benchmarks.</p>
+                        <div class="tech-stack">
+                            <span class="tech">C++20</span>
+                            <span class="tech">CMake</span>
+                            <span class="tech">GoogleTest</span>
+                        </div>
+                    </div>
+
                     <div class="project-card">
                         <div class="project-header">
                             <h3>Hold'Em Engine</h3>
@@ -182,23 +215,6 @@
                         </div>
                     </div>
                     
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h3>AutoAnnotator</h3>
-                            <div class="project-links">
-                                <a href="#" class="link">github</a>
-                                <a href="#" class="link">paper</a>
-                            </div>
-                        </div>
-                        <p>Deep learning system for automatic cell-type annotation with scRNA-seq data. Processes 27k single-cell profiles across 30 categories with hierarchical classifiers.</p>
-                        <div class="tech-stack">
-                            <span class="tech">PyTorch</span>
-                            <span class="tech">SLURM</span>
-                            <span class="tech">A100 GPUs</span>
-                        </div>
-                    </div>
-                    
-
                 </div>
             </section>
 
@@ -605,7 +621,6 @@
                     </div>
                 </div>
             </section>
-            </section>
     
 
             <section id="publications" class="section">
@@ -613,10 +628,10 @@
                 <div class="publications-list">
                     <div class="publication">
                         <div class="publication-header">
-                            <h3>"Supervised Deep Learning for Automatic Cell-Type Annotation with scRNA-seq"</h3>
+                            <h3>Supervised Deep Learning for Automatic Cell-Type Annotation with scRNA-seq</h3>
                             <span class="venue">URECA Symposium 2025</span>
                         </div>
-                        <p>Research on automatic cell-type annotation using deep learning with single-cell RNA sequencing data. Presented at Stony Brook University Undergraduate Research Symposium.</p>
+                        <p>B. Lukacsy, R. Muthu, and A. Jalwan. Presented at the Stony Brook University Undergraduate Research Symposium.</p>
                         <div class="publication-links">
                             <a href="#" class="link">paper</a>
                             <a href="#" class="link">presentation</a>
@@ -631,7 +646,7 @@
                 <div class="activities-grid">
                     <div class="activity-card">
                         <div class="activity-header">
-                            <h3>Founder & President</h3>
+                            <h3>Founder &amp; President</h3>
                             <span class="organization">Stony Brook Quant Club</span>
                         </div>
                         <p>Leading 80+ members with corporate sponsorships, poker tournaments, puzzle nights, Jane Street Estimathon, and Flow Traders info sessions.</p>
@@ -639,6 +654,18 @@
                             <span class="highlight">80+ Members</span>
                             <span class="highlight">Corporate Sponsorships</span>
                             <span class="highlight">Jane Street Estimathon</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-card">
+                        <div class="activity-header">
+                            <h3>Student Awards</h3>
+                            <span class="organization">Scholarships</span>
+                        </div>
+                        <p>Received the €1,500 Stellantis Student Award and the $1,000-per-semester Stony Brook International Excellence scholarship.</p>
+                        <div class="activity-highlights">
+                            <span class="highlight">Stellantis</span>
+                            <span class="highlight">International Excellence</span>
                         </div>
                     </div>
                     
@@ -683,7 +710,7 @@
                     </div>
                     <div class="contact-item">
                         <span class="label">linkedin:</span>
-                        <a href="https://www.linkedin.com/in/rahul-muthu-073366218/" class="link">linkedin.com/in/rahul-muthu-073366218</a>
+                        <a href="https://www.linkedin.com/in/rahul-muthu-/" class="link">linkedin.com/in/rahul-muthu-</a>
                     </div>
                     <div class="contact-item">
                         <span class="label">github:</span>
@@ -698,7 +725,7 @@
         
         <footer>
             <div class="footer-content">
-                <span>© 2025 Rahul Muthu. Built with sweat and tears.</span>
+                <span>© 2026 Rahul Muthu. Built with sweat and tears.</span>
                 <div class="footer-links">
                     <a href="simple.html" class="link">simple version</a>
                     <a href="#" class="link">resume</a>
@@ -709,4 +736,4 @@
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Muthu - Computer Science & Applied Mathematics</title>
+    <title>Rahul Muthu - Computer Science &amp; Applied Mathematics</title>
     <link rel="stylesheet" href="styles-simple.css">
 </head>
 <body>
     <header>
-        <img src="assets/avatar.jpg" alt="Rahul Muthu" class="avatar">
         <h1>rahul muthu</h1>
-        <p>computer science & applied mathematics student</p>
+        <p>computer science &amp; applied mathematics student</p>
         <!-- <p>research assistant working on deep learning for single-cell rna sequencing</p> -->
         <p>i love solving hard problems</p>
         
@@ -25,51 +24,61 @@
     <main>
         <section class="timeline">
             <h2>timeline</h2>
-            
+
             <div class="timeline-item">
-                <div class="timeline-date">2025 -</div>
+                <div class="timeline-date">Jan 2026<br>Present</div>
                 <img src="assets/sbu-logo.jpg" alt="Stony Brook University" class="timeline-logo">
                 <div class="timeline-body">
-                    <p><strong>Research Assistant</strong> - Stony Brook University. Made an AutoAnnotator with Supervised Deep Learning for Automatic Cell-Type Annotation using single-cell RNA sequencing data.</p>
-                    <p>Working with PyTorch, SLURM, and A100 GPUs to process 27k single-cell profiles across 30 categories with hierarchical classifiers.</p>
+                    <p><strong>Teaching Assistant</strong> - Stony Brook University, CSE 320: Systems II. Author homework assignments, autograder tests, and exam questions for systems programming topics.</p>
+                    <p>Hold weekly office hours and review sessions covering debugging, memory, concurrency, and assignment design.</p>
                 </div>
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-date">2024 -</div>
+                <div class="timeline-date">Feb&ndash;Jul<br>2026</div>
+                <div class="timeline-org">Independent project</div>
+                <div class="timeline-body">
+                    <p><strong>MicroBook</strong> - Independent C++20 systems project. Built a deterministic single-symbol limit order book with price-time matching, replay, final-state verification, and invariant tests.</p>
+                    <p>Added command-line tools, fixed-seed randomized tests, and Google Benchmark workloads.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Oct 2024<br>Aug 2025</div>
+                <img src="assets/sbu-logo.jpg" alt="Stony Brook University" class="timeline-logo">
+                <div class="timeline-body">
+                    <p><strong>Research Assistant</strong> - Stony Brook University. Developed a modular PyTorch AutoAnnotator with grid search and k-fold cross-validation on 27k cell profiles.</p>
+                    <p>Built a SLURM pipeline for 55 GB/day across 8 A100 GPUs, reducing epoch time from 130 to 45 minutes and improving rare-cell F1 by 15 percentage points.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Jul&ndash;Aug<br>2024</div>
                 <img src="assets/gd.png" alt="Giesecke+Devrient" class="timeline-logo">
                 <div class="timeline-body">
-                    <p><strong>Software Engineering Intern</strong> - Giesecke+Devrient. Worked on Currency Management software using AWS, Docker, Kubernetes, and JavaScript.</p>
+                    <p><strong>Software Engineering Intern</strong> - Giesecke+Devrient. Developed an XGBoost demand-forecasting service and deployed an AWS Lambda and Kinesis ETL pipeline.</p>
+                    <p>Added Jest tests with 90%+ coverage and automated releases using Docker, Kubernetes, and GitLab CI.</p>
                 </div>
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-date">2023 -</div>
-                <img src="assets/chi-squared-logo.jpg" alt="Chi Squared Consulting" class="timeline-logo">
-                <div class="timeline-body">
-                    <p><strong>Software Engineering Intern</strong> - Chi Squared Consulting. Found dataset anomalies for casino transactions using time-series analysis and statistical methods.</p>
-                    <p>Implemented anomaly detection algorithms processing large-scale financial data with Python and statistical libraries.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">Exp 2027 -</div>
+                <div class="timeline-date">Expected<br>May 2027</div>
                 <img src="assets/sbu-logo.jpg" alt="Stony Brook University" class="timeline-logo">
                 <div class="timeline-body">
-                    <p><strong>B.S. in Computer Science & Applied Mathematics</strong> - Stony Brook University. Dean's List recipient.</p>
-                    <p>Coursework includes Data Structures, Analysis of Algorithms, Software Engineering, Systems I & II, Computational Geometry, Probability & Statistics, Multivariable Calculus, and Differential Equations.</p>
+                    <p><strong>B.S. in Computer Science &amp; Applied Mathematics</strong> - Stony Brook University. Dean's List recipient.</p>
+                    <p>Coursework includes Data Structures, Analysis of Algorithms, Software Engineering, Systems I &amp; II, Computational Geometry, Probability &amp; Statistics, and Deterministic &amp; Stochastic Models.</p>
                 </div>
             </div>
         </section>
 
         <section class="projects">
             <h2>projects</h2>
-            <p class="projects-intro">research projects and personal experiments in machine learning and mathematics</p>
+            <p class="projects-intro">systems, simulation, and mathematical programming projects</p>
             
             <ul>
+                <li><a href="https://github.com/rahul-muthu/microbook">microbook</a> - deterministic c++20 limit order book with price-time matching, event replay, final-state verification, invariant tests, cli tools, and benchmarks</li>
                 <li><a href="#">hold'em engine</a> - poker ui modelling game strategies with monte carlo simulations for pot equity. features bitwise hand evaluator for optimal performance using c++20</li>
-                <li><a href="#">plinko simulator</a> - interactive Plinko game to analyze its mechanics, including the impact of ball dampening and X-biasing on game odds and player engagement/li>
-                <li><a href="#">autoannotator</a> - deep learning system for automatic cell-type annotation with scrna-seq data. processes 27k single-cell profiles across 30 categories with hierarchical classifiers using pytorch and a100 gpus</li>
+                <li><a href="#">plinko simulator</a> - interactive p5.js game exploring ball dampening, x-biasing, odds, and player engagement</li>
             </ul>
         </section>
 
@@ -78,7 +87,7 @@
             
             <ol class="publications-list">
                 <li class="pub">
-                    <span class="author-highlight">Rahul Muthu</span>. <a href="#">"Supervised Deep Learning for Automatic Cell-Type Annotation with scRNA-seq"</a>. URECA Symposium 2025.
+                    B. Lukacsy, <span class="author-highlight">R. Muthu</span>, A. Jalwan. <a href="#">"Supervised Deep Learning for Automatic Cell-Type Annotation with scRNA-seq"</a>. URECA Symposium 2025.
                     <a href="#">paper</a> • <a href="#">presentation</a>
                 </li>
             </ol>
@@ -92,7 +101,13 @@
                 <div class="project">
                     <img src="assets/sbu-quant-club-logo.png" alt="Activity: Stony Brook Quant Club" class="project-icon">
                     <div class="project-text">
-                        <p><a href="#">founder & president — stony brook quant club</a> - leading 80+ members with corporate sponsorships, poker tournaments, puzzle nights, jane street estimathon, and flow traders info sessions</p>
+                        <p><a href="#">founder &amp; president — stony brook quant club</a> - leading 80+ members with corporate sponsorships, poker tournaments, puzzle nights, jane street estimathon, and flow traders info sessions</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-text">
+                        <p><strong>student awards</strong> - €1,500 Stellantis Student Award and $1,000-per-semester Stony Brook International Excellence scholarship</p>
                     </div>
                 </div>
                 
@@ -115,8 +130,8 @@
         <section class="skills">
             <h2>skills</h2>
             <ul>
-                <li>python, c++17/20, java, pytorch, numpy, pandas, scikit-learn</li>
-                <li>aws, docker, kubernetes, slurm, a100 gpus</li>
+                <li>python, c++17/20, java, sql, bash, pytorch, numpy, pandas, scikit-learn</li>
+                <li>linux, aws, docker, kubernetes, slurm, git, ci/cd</li>
                 <li>competitive programming, mathematical olympiads</li>
                 <li>deep learning, machine learning, statistical analysis</li>
             </ul>
