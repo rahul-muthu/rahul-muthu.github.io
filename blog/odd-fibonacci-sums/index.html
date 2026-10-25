@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Odd Fibonacci Sums — Rahul Muthu</title>
+  <meta name="description" content="A short derivation involving sums of odd-indexed Fibonacci numbers.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
+</head>
+<body class="site-page">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-masthead"><div class="site-wrap"><span class="site-title">Rahul Muthu</span><nav aria-label="Primary navigation"><a href="/">about</a><a href="/resume/">resume</a><a href="/blog/" aria-current="page">blog</a><a href="mailto:rahul.muthu@stonybrook.edu">email</a><a href="https://github.com/rahul-muthu">github</a></nav></div></header>
+  <main id="content" class="site-wrap blog-content">
+    <article class="post">
+      <header class="post-header"><h1>Odd Fibonacci Sums</h1><p class="meta">Published <time datetime="2026-07-17">2026-07-17</time> · Updated <time datetime="2026-07-18">2026-07-18</time> · 3 min read</p></header>
+      <p>The Fibonacci sequence begins with <var>F</var><sub>0</sub> = 0, <var>F</var><sub>1</sub> = 1, and the recurrence</p>
+      <p class="equation"><var>F</var><sub>n</sub> = <var>F</var><sub>n−1</sub> + <var>F</var><sub>n−2</sub>.</p>
+      <h2>The identity</h2>
+      <blockquote><p><strong>Theorem.</strong> For every positive integer <var>n</var>,</p><p class="equation">∑<sup>n</sup><sub>k=1</sub> <var>F</var><sub>2k−1</sub> = <var>F</var><sub>2n</sub>.</p></blockquote>
+      <p>The left side adds the odd-indexed terms. The right side says the entire sum collapses to one even-indexed term.</p>
+      <h2>Proof</h2>
+      <p>The case <var>n</var> = 1 is immediate. Suppose the result holds for <var>n</var>. Then</p>
+      <pre><code>sum(k = 1 ... n + 1) F(2k - 1)
+= sum(k = 1 ... n) F(2k - 1) + F(2n + 1)
+= F(2n) + F(2n + 1)
+= F(2n + 2)</code></pre>
+      <p>The second line uses the induction hypothesis and the third uses the Fibonacci recurrence. This proves the claim.<sup><a href="#fn1" id="ref1">1</a></sup></p>
+      <section aria-labelledby="footnotes"><h2 id="footnotes">Footnotes</h2><ol><li id="fn1">Mathematics here uses ordinary HTML and text, so there is no rendering dependency. <a href="#ref1">↩</a></li></ol></section>
+      <p class="article-links"><a href="/blog/">← All posts</a> · <a href="/blog/latency-budgets/">Next: Latency Budgets →</a></p>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="site-wrap"><p>Rahul Muthu blog</p></div></footer>
+</body>
+</html>
