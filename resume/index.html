@@ -13,26 +13,56 @@
   <a class="skip-link" href="#content">Skip to content</a>
   <header class="site-masthead"><div class="site-wrap"><span class="site-title">Rahul Muthu</span><nav aria-label="Primary navigation"><a href="/">about</a><a href="/blog/">blog</a><a href="/resume/" aria-current="page">resume</a><button type="button" class="email-copy" data-copy-email="rahul.muthu@stonybrook.edu" aria-label="Copy email address" title="Copy rahul.muthu@stonybrook.edu">email</button><a href="https://github.com/rahul-muthu">github</a><span class="copy-status" role="status"></span></nav></div></header>
   <main id="content" class="site-wrap page-content resume">
-    <p><a href="mailto:rahul.muthu@stonybrook.edu">rahul.muthu@stonybrook.edu</a> · <a href="tel:+19342632862">+1 934-263-2862</a> · <a href="https://github.com/rahul-muthu">GitHub</a> · <a href="https://www.linkedin.com/in/rahul-muthu-">LinkedIn</a></p>
+    <p><a href="mailto:rahul.muthu@stonybrook.edu">rahul.muthu@stonybrook.edu</a> · <a href="tel:+19342632862">+1 934-263-2862</a> · <a href="https://github.com/rahul-muthu">GitHub</a> · <a href="https://www.linkedin.com/in/rahul-muthu-073366218">LinkedIn</a></p>
     <p class="no-print"><a href="/resume.pdf">Download PDF</a></p>
-    <h2>Summary</h2>
-    <p>Computer science and applied mathematics student with experience in systems programming, machine learning research, cloud infrastructure, and quantitative computing.</p>
-    <h2>Experience</h2>
-    <section class="resume-entry"><h3>Teaching Assistant — Stony Brook University, CSE 320</h3><p class="meta"><time datetime="2026-01">January 2026</time>–present · Stony Brook, NY</p><p>Develop course material and help students understand systems programming, debugging, memory, and concurrency.</p></section>
-    <section class="resume-entry"><h3>MicroBook — Independent Systems Project</h3><p class="meta"><time datetime="2026-02">February 2026</time>–<time datetime="2026-07">July 2026</time> · Remote</p><p>Built a deterministic C++20 limit order book with price-time matching, state verification, invariant testing, and benchmarking.</p></section>
-    <section class="resume-entry"><h3>Research Assistant — Stony Brook University</h3><p class="meta"><time datetime="2024-10">October 2024</time>–<time datetime="2025-08">August 2025</time> · Stony Brook, NY</p><p>Developed PyTorch models and a multi-GPU training pipeline for automatic cell-type annotation, improving training speed and rare-cell classification.</p></section>
-    <section class="resume-entry"><h3>Software Engineering Intern — Giesecke+Devrient</h3><p class="meta"><time datetime="2024-07">July 2024</time>–<time datetime="2024-08">August 2024</time> · Dubai, UAE</p><p>Built demand forecasting and serverless analytics infrastructure that reduced cash inventory requirements and dashboard latency.</p></section>
     <h2>Education</h2>
-    <section class="resume-entry"><h3>B.S. in Computer Science &amp; Applied Mathematics — Stony Brook University</h3><p class="meta">Expected May 2027 · Dean’s List, Spring 2025</p><p>Selected coursework: algorithms, systems, software engineering, computational geometry, probability, statistics, and stochastic models.</p></section>
+    <section class="resume-entry"><h3>B.S. in Computer Science &amp; Applied Mathematics — Stony Brook University</h3><p class="meta">August 2023–December 2027 (expected) · Stony Brook, NY</p><p>Relevant coursework: Data Structures, Systems Fundamentals I &amp; II, Software Development, Operating Systems, Cloud Computing, Data Mining, Theory of Computation, Computational Geometry, and Probability Theory.</p><p>In progress: Computer Networks and Software Engineering.</p></section>
+    <h2>Experience</h2>
+    <section class="resume-entry">
+      <h3>Teaching Assistant — Stony Brook University, CSE 320: Systems Fundamentals II</h3>
+      <p class="meta"><time datetime="2026-01">January 2026</time>–present · Stony Brook, NY</p>
+      <ul>
+        <li>Designed a coverage-guided fuzzer assignment and wrote the reference implementation in C. Instrumented targets report edge coverage through shared memory.</li>
+        <li>The fuzzer coordinates parallel target processes with fork/exec, pipes, and signals; a Unix-domain-socket validator exercises crashes, timeouts, and signal handling.</li>
+        <li>Wrote autograder and exam questions and led weekly office hours on debugging, memory, processes, and concurrency.</li>
+      </ul>
+    </section>
+    <section class="resume-entry">
+      <h3>Research Assistant — Stony Brook University</h3>
+      <p class="meta"><time datetime="2024-10">October 2024</time>–<time datetime="2025-08">August 2025</time> · Stony Brook, NY</p>
+      <ul>
+        <li>Built PyTorch classifiers for cell-type annotation and evaluated them with grid search and k-fold cross-validation on 27,000 scRNA-seq profiles.</li>
+        <li>A label hierarchy and class-balanced loss improved rare-cell-type F1 by 15 points; feature selection cut the input from 23,000 genes to 3,500.</li>
+        <li>Moved training to a SLURM pipeline on eight A100 GPUs, reducing epoch time from 130 to 45 minutes; presented the work at the 2025 URECA symposium.</li>
+      </ul>
+    </section>
+    <section class="resume-entry">
+      <h3>Software Engineering Intern — Giesecke+Devrient</h3>
+      <p class="meta"><time datetime="2024-07">July 2024</time>–<time datetime="2024-08">August 2024</time> · Dubai, UAE</p>
+      <ul>
+        <li>Built an XGBoost demand-forecasting prototype from checkout data for cash-inventory planning.</li>
+        <li>Implemented a Lambda/Kinesis ingestion path for an analytics dashboard; added Jest tests to its TypeScript service and automated releases through GitLab CI.</li>
+      </ul>
+    </section>
     <h2>Projects</h2>
-    <section class="resume-entry"><h3>Hold’Em Engine</h3><p>Built a C++17 poker strategy interface with Monte Carlo equity simulation and a bitwise hand evaluator.</p></section>
-    <section class="resume-entry"><h3>Plinko Simulator</h3><p>Created an interactive p5.js simulation for analyzing ball dynamics, outcome bias, odds, and player engagement.</p></section>
-    <h2>Activities &amp; recognition</h2>
-    <p>Founder and president of the 80+ member Stony Brook Quant Club; junior-category ICPC qualifier runner-up; UAE IMO national qualifier; recipient of the Stellantis Student Award and Stony Brook International Excellence scholarship.</p>
-    <h2>Publication</h2>
-    <p>B. Lukacsy, R. Muthu, and A. Jalwan, “Supervised Deep Learning for Automatic Cell-Type Annotation with scRNA-seq,” presented at the 2025 URECA Undergraduate Research Symposium.</p>
-    <h2>Skills</h2>
-    <p>Python, NumPy, pandas, scikit-learn, PyTorch, C++17/20, Java, SQL, Bash, Linux, AWS, Docker, Kubernetes, SLURM, Git, and CI/CD</p>
+    <section class="resume-entry">
+      <h3>MicroBook</h3>
+      <p class="meta"><time datetime="2026-02">February 2026</time>–<time datetime="2026-07">July 2026</time> · Personal project, single-symbol limit order book in C++20</p>
+      <ul>
+        <li>The book uses ordered price maps, FIFO lists at each price, and an order-ID index to avoid full-book scans on cancel and modify.</li>
+        <li>Matching follows price-time priority at the resting order’s price, including partial fills and deterministic trade ordering.</li>
+        <li>Strict text-log replay and fixed-seed randomized traces check invariants after each operation; repeat runs compare final snapshots and hashes.</li>
+      </ul>
+    </section>
+    <h2>Awards &amp; leadership</h2>
+    <ul>
+      <li><strong>UAE IMO National Qualifier:</strong> 6th nationally; invited to the IMO training camp.</li>
+      <li><strong>Stony Brook ICPC Qualifier:</strong> 2nd overall in the junior category.</li>
+      <li><strong>Founder and President, Stony Brook Quant Club:</strong> 80+ members; organized a Jane Street Estimathon and Flow Traders events.</li>
+    </ul>
+    <h2>Technical skills</h2>
+    <p><strong>Languages:</strong> Python, C, C++, TypeScript, Java, SQL, Bash</p>
+    <p><strong>Tools:</strong> Linux, Git, CMake, SLURM, AWS</p>
   </main>
   <footer class="site-footer"><div class="site-wrap"><p>Rahul Muthu · <a href="/resume.pdf">PDF resume</a></p></div></footer>
 </body>
