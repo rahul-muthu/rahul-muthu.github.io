@@ -5,6 +5,7 @@ import { extname, join, normalize, resolve } from 'node:path';
 const directory = resolve(process.argv[2] ?? 'site');
 const port = Number(process.env.PORT ?? 4321);
 const types = {
+  '.js': 'text/javascript; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
   '.html': 'text/html; charset=utf-8',
   '.pdf': 'application/pdf',

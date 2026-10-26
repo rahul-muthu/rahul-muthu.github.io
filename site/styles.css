@@ -29,7 +29,7 @@ a {
   text-underline-offset: 0.12em;
 }
 
-a:focus-visible {
+a:focus-visible, button:focus-visible {
   outline: 2px solid var(--link);
   outline-offset: 3px;
 }
@@ -44,7 +44,7 @@ a:focus-visible {
 }
 
 nav { margin-bottom: 2.5rem; }
-nav a { margin-right: 0.8rem; }
+nav a, nav button { margin-right: 0.8rem; }
 nav a[aria-current="page"] { color: var(--text); font-weight: bold; }
 
 h1, h2, h3 { line-height: 1.25; }
@@ -122,12 +122,32 @@ body.site-page {
 }
 
 .site-masthead nav {
+  position: relative;
   flex-shrink: 0;
   margin: 0;
 }
 
-.site-masthead nav a {
+.site-masthead nav a, .site-masthead nav button {
   color: var(--muted);
+}
+
+.email-copy {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+  cursor: pointer;
+}
+
+.copy-status {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: var(--background);
+  color: var(--text);
+  font-size: 0.85rem;
 }
 
 .site-masthead nav a[aria-current="page"] {
@@ -306,7 +326,7 @@ figcaption { margin-top: 0.35rem; font-size: 0.9rem; }
   .site-wrap { padding-inline: 1rem; }
   .site-masthead .site-wrap { align-items: flex-start; flex-direction: column; justify-content: center; padding-block: 0.7rem; }
   .site-masthead nav { line-height: 1.4; }
-  .site-masthead nav a { margin-right: 0.7rem; }
+  .site-masthead nav a, .site-masthead nav button { margin-right: 0.7rem; }
   .blog-index, .blog-content { padding-block: 1.75rem; }
   .blog-list li { margin-bottom: 1.8rem; }
   .post-header h1 { font-size: 2rem; }
